@@ -7,6 +7,7 @@ import HookCounterOne from './components/HookCounterOne'
 import HookMouse from './components/HookMouse'
 import HookMouseContainer from './components/HookMouseContainer'
 import IntervalHookCounter from './components/IntervalHookCounter'
+import DataFetching from './components/DataFetching'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       {/* <HookMouse/> */}
       <HookMouseContainer/>
       <IntervalHookCounter/>
+      <DataFetching/>
     </div>
   )
 }
