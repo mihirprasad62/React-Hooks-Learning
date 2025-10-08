@@ -6,6 +6,7 @@ import HookCounterFour from './components/HookCounterFour'
 import HookCounterOne from './components/HookCounterOne'
 import HookMouse from './components/HookMouse'
 import HookMouseContainer from './components/HookMouseContainer'
+import IntervalHookCounter from './components/IntervalHookCounter'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <HookCounterOne/>
       {/* <HookMouse/> */}
       <HookMouseContainer/>
+      <IntervalHookCounter/>
     </div>
   )
 }
