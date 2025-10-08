@@ -5,6 +5,7 @@ import HookCounterThree from './components/HookCounterThree'
 import HookCounterFour from './components/HookCounterFour'
 import HookCounterOne from './components/HookCounterOne'
 import HookMouse from './components/HookMouse'
+import HookMouseContainer from './components/HookMouseContainer'
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       <HookCounterThree/>
       <HookCounterFour/>
       <HookCounterOne/>
-      <HookMouse/>
+      {/* <HookMouse/> */}
+      <HookMouseContainer/>
     </div>
   )
 }
