@@ -11,6 +11,7 @@ import DataFetching from "./components/DataFetching";
 import IndivisualDataFetching from "./components/IndivisualDataFetching";
 import ComponentA from "./components/ComponentA";
 import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -33,7 +34,8 @@ const App = () => {
           <ComponentA />
         </lastNameContext.Provider>
       </firstNameContext.Provider> */}
-      <CounterOne/>
+      {/* <CounterOne/> */}
+      <CounterTwo/>
     </div>
   );
 };
