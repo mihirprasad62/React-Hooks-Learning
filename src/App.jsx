@@ -10,6 +10,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import DataFetching from "./components/DataFetching";
 import IndivisualDataFetching from "./components/IndivisualDataFetching";
 import ComponentA from "./components/ComponentA";
+import CounterOne from "./components/CounterOne";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -27,11 +28,12 @@ const App = () => {
       <IntervalHookCounter/>
       <DataFetching/>
       <IndivisualDataFetching/> */}
-      <firstNameContext.Provider value={"mihir"}>
+      {/* <firstNameContext.Provider value={"mihir"}>
         <lastNameContext.Provider value={'prasad'}>
           <ComponentA />
         </lastNameContext.Provider>
-      </firstNameContext.Provider>
+      </firstNameContext.Provider> */}
+      <CounterOne/>
     </div>
   );
 };
