@@ -16,6 +16,8 @@ import CounterThree from "./components/CounterThree";
 import ComponentX from "./components/useReducerWithContext/ComponentX";
 import ComponentY from "./components/useReducerWithContext/ComponentY";
 import ComponentZ from "./components/useReducerWithContext/ComponentZ";
+import DataFetchingOne from "./components/DataFetchingWithReducer/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingWithReducer/DataFetchingTwo";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -57,14 +59,17 @@ const App = () => {
       {/* <CounterTwo/> */}
       {/* <CounterThree/> */}
 
-      <countContext.Provider
+      {/* <countContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
       >
         <h2>Count : {count}</h2>
         <ComponentX />
         <ComponentY />
         <ComponentZ />
-      </countContext.Provider>
+      </countContext.Provider> */}
+
+      {/* <DataFetchingOne/> */}
+      <DataFetchingTwo/>
     </div>
   );
 };
