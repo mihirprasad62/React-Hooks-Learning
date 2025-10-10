@@ -19,6 +19,7 @@ import ComponentZ from "./components/useReducerWithContext/ComponentZ";
 import DataFetchingOne from "./components/DataFetchingWithReducer/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingWithReducer/DataFetchingTwo";
 import ParentComponent from "./components/useCallbackHook/ParentComponent";
+import Counter from "./components/useMemo Hook/Counter";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -72,7 +73,9 @@ const App = () => {
       {/* <DataFetchingOne/> */}
       {/* <DataFetchingTwo/> */}
 
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+
+      <Counter/>
     </div>
   );
 };
