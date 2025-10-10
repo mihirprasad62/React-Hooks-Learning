@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import HookCounter from "./components/HookCounter";
 import HookCounterTwo from "./components/HookCounterTwo";
 import HookCounterThree from "./components/HookCounterThree";
@@ -13,11 +13,29 @@ import ComponentA from "./components/ComponentA";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
+import ComponentX from "./components/useReducerWithContext/ComponentX";
+import ComponentY from "./components/useReducerWithContext/ComponentY";
+import ComponentZ from "./components/useReducerWithContext/ComponentZ";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
+export const countContext = React.createContext();
 
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    case "reset":
+      return initialState;
+    default:
+      return state;
+  }
+};
 const App = () => {
+  const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
       {/* <HookCounter/>
@@ -37,7 +55,16 @@ const App = () => {
       </firstNameContext.Provider> */}
       {/* <CounterOne/> */}
       {/* <CounterTwo/> */}
-      <CounterThree/>
+      {/* <CounterThree/> */}
+
+      <countContext.Provider
+        value={{ countState: count, countDispatch: dispatch }}
+      >
+        <h2>Count : {count}</h2>
+        <ComponentX />
+        <ComponentY />
+        <ComponentZ />
+      </countContext.Provider>
     </div>
   );
 };
