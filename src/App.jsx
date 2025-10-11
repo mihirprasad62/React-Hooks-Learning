@@ -20,6 +20,8 @@ import DataFetchingOne from "./components/DataFetchingWithReducer/DataFetchingOn
 import DataFetchingTwo from "./components/DataFetchingWithReducer/DataFetchingTwo";
 import ParentComponent from "./components/useCallbackHook/ParentComponent";
 import Counter from "./components/useMemo Hook/Counter";
+import FocusInput from "./components/useRef Hook/FocusInput";
+import HookTimer from "./components/useRef Hook/HookTimer";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -75,7 +77,10 @@ const App = () => {
 
       {/* <ParentComponent/> */}
 
-      <Counter/>
+      {/* <Counter/> */}
+
+      {/* <FocusInput/> */}
+      <HookTimer/>
     </div>
   );
 };
