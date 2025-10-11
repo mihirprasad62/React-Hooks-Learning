@@ -24,6 +24,8 @@ import FocusInput from "./components/useRef Hook/FocusInput";
 import HookTimer from "./components/useRef Hook/HookTimer";
 import DocTitleOne from "./components/custom Hook/DocTitleOne";
 import DocTitleTwo from "./components/custom Hook/DocTitleTwo";
+import CustomCounterOne from "./components/custom Hook/CustomCounterOne";
+import CustomCounterTwo from "./components/custom Hook/CustomCounterTwo";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -84,8 +86,11 @@ const App = () => {
       {/* <FocusInput/> */}
       {/* <HookTimer/> */}
 
-      <DocTitleOne/>
-      <DocTitleTwo/>
+      {/* <DocTitleOne/>
+      <DocTitleTwo/> */}
+
+      <CustomCounterOne/>
+      <CustomCounterTwo/>
     </div>
   );
 };
