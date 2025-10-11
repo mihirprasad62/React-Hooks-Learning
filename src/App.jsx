@@ -22,6 +22,8 @@ import ParentComponent from "./components/useCallbackHook/ParentComponent";
 import Counter from "./components/useMemo Hook/Counter";
 import FocusInput from "./components/useRef Hook/FocusInput";
 import HookTimer from "./components/useRef Hook/HookTimer";
+import DocTitleOne from "./components/custom Hook/DocTitleOne";
+import DocTitleTwo from "./components/custom Hook/DocTitleTwo";
 
 export const firstNameContext = React.createContext();
 export const lastNameContext = React.createContext();
@@ -80,7 +82,10 @@ const App = () => {
       {/* <Counter/> */}
 
       {/* <FocusInput/> */}
-      <HookTimer/>
+      {/* <HookTimer/> */}
+
+      <DocTitleOne/>
+      <DocTitleTwo/>
     </div>
   );
 };
